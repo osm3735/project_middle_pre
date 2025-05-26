@@ -34,12 +34,12 @@ readTextFile("config.json", function (text) {
             const markers = points.map(p => {
                 const marker = new google.maps.Marker({
                     position: { lat: p.lat, lng: p.lng },
-                    title: p.title || ""
+                    title: p.title
                 });
 
-                if (p.title) {
+                if (p.title || p.description) {
                     const info = new google.maps.InfoWindow({
-                        content: `<strong>${p.title}</strong>`
+                        content: `<strong>${p.title}</strong><br><hr>${p.description || ""}`
                     });
 
                     marker.addListener("click", () => info.open(map, marker));

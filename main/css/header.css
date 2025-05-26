@@ -1,0 +1,24 @@
+header{
+    background-color: black;
+}
+
+.header {
+    padding: 10px;
+}
+
+.header_nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+a{
+    color: white;
+    display: block;
+}
+
+a:hover {
+    color: yellow;
+}

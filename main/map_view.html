@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Google Map API 키 변수로 사용</title>
+    <link rel="stylesheet" href="css/header.css">
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
             text-align: center;
@@ -23,26 +23,37 @@
             width: 90vw;
             height: 90vh;
         }
+
+        .title_hr {
+            display: block;
+            width: 90%;
+            height: 0;
+            border: 2px solid black;
+            margin: 10px auto;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <div class="header">
-            <nav>
-                <a href="">HOME</a>
-                <a href=""></a>
+            <nav class="header_nav">
+                <a> Kim & Bop </a>
+                <a href="index.html">HOME</a>
+                <a href="map_points.json">MAP</a>
             </nav>
         </div>
     </header>
     <main>
-        <h3>Google Map view</h3>
-        <hr style="border:2px solid black; margin: 10px;">
-        <div id="map">
-            <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
-            <script src="./js/map.js"></script>
+            <h3>Google Map view</h3>
+            <hr class="title_hr">
+        <div id="map_all">
+            <div id="map">
+                <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+                <script src="./js/map.js"></script>
+            </div>
+            <div id="map_content"></div>
         </div>
-
     </main>
 
 
