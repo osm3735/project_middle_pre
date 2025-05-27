@@ -10,6 +10,9 @@ function readTextFile(file, callback) {
     rawFile.send(null);
 }
 
+// 전역 변수로 map 인스턴스 저장
+let globalMap = null;
+
 readTextFile("config.json", function (text) {
     var data_config = JSON.parse(text);
     const API_KEY = data_config.apiKey;
@@ -22,7 +25,7 @@ readTextFile("config.json", function (text) {
 
     window.initMap = function () {
         const center = { lat: 37.5665, lng: 126.9780 };
-        const map = new google.maps.Map(document.getElementById('map'), {
+        globalMap = new google.maps.Map(document.getElementById('map'), {
             zoom: 12,
             center: center
         });
@@ -42,13 +45,21 @@ readTextFile("config.json", function (text) {
                         content: `<strong><a href="#${p.map_id}">${p.title}</a></strong><br><hr>${p.description || ""}`
                     });
 
-                    marker.addListener("click", () => info.open(map, marker));
+                    marker.addListener("click", () => info.open(globalMap, marker));
                 }
 
                 return marker;
             });
 
-            new markerClusterer.MarkerClusterer({ map, markers });
+            new markerClusterer.MarkerClusterer({ map: globalMap, markers });
         });
     };
 });
+
+// 지도 중심 및 줌 업데이트 함수
+function updateMapCenter(lat, lng, zoom = 15) {
+    if (globalMap) {
+        globalMap.setCenter({ lat: lat, lng: lng });
+        globalMap.setZoom(zoom);
+    }
+}

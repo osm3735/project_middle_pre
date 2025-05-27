@@ -10,6 +10,8 @@ function updateMapContentByHash(points) {
     console.log(mapElement, contentElement, hash, selected);
     if (mapElement && contentElement) {
         if (hash && selected) {
+            updateMapCenter(selected.lat, selected.lng, 16);
+            
             mapElement.style.width = '500px';
             contentElement.style.display = 'block';
             contentElement.innerHTML = `
@@ -26,6 +28,7 @@ function updateMapContentByHash(points) {
                 });
             }
         } else {
+            // 지도 위치/줌은 그대로 두고 UI만 변경
             mapElement.style.width = '100%';
             contentElement.style.display = 'none';
             contentElement.innerHTML = '';
@@ -38,4 +41,24 @@ window.addEventListener('hashchange', () => {
         const data = JSON.parse(pointText);
         updateMapContentByHash(data.points);
     });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+    if (window.location.hash) {
+        readTextFile("map_points.json", function (pointText) {
+            const data = JSON.parse(pointText);
+            updateMapContentByHash(data.points);
+        });
+    }
+});
+
+window.addEventListener('load', () => {
+    if (window.location.hash) {
+        setTimeout(() => {
+            readTextFile("map_points.json", function (pointText) {
+                const data = JSON.parse(pointText);
+                updateMapContentByHash(data.points);
+            });
+        }, 1000); // 1초 후 재시도
+    }
 });
