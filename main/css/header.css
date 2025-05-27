@@ -14,11 +14,11 @@ header{
     align-items: center;
     padding: 10px;
 }
-a{
+nav a{
     color: white;
     display: block;
 }
 
-a:hover {
+nav a:hover {
     color: yellow;
 }

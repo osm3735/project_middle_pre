@@ -39,7 +39,7 @@ readTextFile("config.json", function (text) {
 
                 if (p.title || p.description) {
                     const info = new google.maps.InfoWindow({
-                        content: `<strong>${p.title}</strong><br><hr>${p.description || ""}`
+                        content: `<strong><a href="#${p.map_id}">${p.title}</a></strong><br><hr>${p.description || ""}`
                     });
 
                     marker.addListener("click", () => info.open(map, marker));

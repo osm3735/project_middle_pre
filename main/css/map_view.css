@@ -1,0 +1,34 @@
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map_all {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  transition: width 0.3s;
+}
+#map_content {
+  display: none;
+  width: calc(100% - 500px);
+  height: 100%;
+  overflow-y: auto;
+}
+
+.title_hr {
+    display: block;
+    width: 90%;
+    height: 0;
+    border: 2px solid black;
+    margin: 10px auto;
+}
