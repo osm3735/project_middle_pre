@@ -12,6 +12,7 @@ app.mount("/css", StaticFiles(directory="templates/css"), name="css")
 app.mount("/js", StaticFiles(directory="templates/js"), name="js")
 app.mount("/img", StaticFiles(directory="templates/img"), name="img")
 app.mount("/json", StaticFiles(directory="templates/json"), name="json")
+app.mount("/", StaticFiles(directory="templates"), name="rootfiles")
 
 # 템플릿 설정
 templates = Jinja2Templates(directory="templates")
@@ -26,6 +27,6 @@ async def index(request: Request):
 async def read_map_view(request: Request):
     return templates.TemplateResponse("map_view.html", {"request": request})
 
-if __name__ == "__main__":
-    uvicorn.run("main:app", reload=True)
+# if __name__ == "__main__":
+#     uvicorn.run("main:app", reload=True)
 
