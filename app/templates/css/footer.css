@@ -1,7 +1,11 @@
-footer{
-    background-color: black;
+.footer_content {
+  flex: 1;
 }
 
-fotter {
-    padding: 10px;
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
 }

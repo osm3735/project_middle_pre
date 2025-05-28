@@ -13,7 +13,7 @@ function readTextFile(file, callback) {
 // 전역 변수로 map 인스턴스 저장
 let globalMap = null;
 
-readTextFile("config.json", function (text) {
+readTextFile("json/config.json", function (text) {
     var data_config = JSON.parse(text);
     const API_KEY = data_config.apiKey;
 
@@ -30,7 +30,7 @@ readTextFile("config.json", function (text) {
             center: center
         });
 
-        readTextFile("map_points.json", function (pointText) {
+        readTextFile("json/map_points.json", function (pointText) {
             const data = JSON.parse(pointText);
             const points = data.points;
 

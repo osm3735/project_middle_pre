@@ -1,0 +1,180 @@
+{
+  "points": [
+    {
+      "map_id": 1,
+      "title": "서울",
+      "description": "본점",
+      "lat": 37.5665,
+      "lng": 126.9780,
+      "content": "서울 본점입니다."
+    },
+    {
+      "map_id": 2,
+      "title": "부산",
+      "description": "부산지점",
+      "lat": 35.1796,
+      "lng": 129.0756,
+      "content": "부산지점입니다."
+    },
+    {
+      "map_id": 3,
+      "title": "제주",
+      "description": "제주지점",
+      "lat": 33.4996,
+      "lng": 126.5312,
+      "content": "제주지점입니다."
+    },
+    {
+      "map_id": 4,
+      "title": "서울1",
+      "description": "서울1지점",
+      "lat": 37.5651,
+      "lng": 126.9895,
+      "content": "서울1지점입니다."
+    },
+    {
+      "map_id": 5,
+      "title": "서울2",
+      "description": "서울2지점",
+      "lat": 37.5700,
+      "lng": 126.9820,
+      "content": "서울2지점입니다."
+    },
+    {
+      "map_id": 6,
+      "title": "서울3",
+      "description": "서울3지점",
+      "lat": 37.5610,
+      "lng": 126.9830,
+      "content": "서울3지점입니다."
+    },
+    {
+      "map_id": 7,
+      "title": "서울4",
+      "description": "서울4지점",
+      "lat": 37.5640,
+      "lng": 126.9750,
+      "content": "서울4지점입니다."
+    },
+    {
+      "map_id": 8,
+      "title": "인천",
+      "description": "인천지점",
+      "lat": 37.4563,
+      "lng": 126.7052,
+      "content": "인천지점입니다."
+    },
+    {
+      "map_id": 9,
+      "title": "대전",
+      "description": "대전지점",
+      "lat": 36.3504,
+      "lng": 127.3845,
+      "content": "대전지점입니다."
+    },
+    {
+      "map_id": 10,
+      "title": "광주",
+      "description": "광주지점",
+      "lat": 35.1595,
+      "lng": 126.8526,
+      "content": "광주지점입니다."
+    },
+    {
+      "map_id": 11,
+      "title": "대구",
+      "description": "대구지점",
+      "lat": 35.8714,
+      "lng": 128.6014,
+      "content": "대구지점입니다."
+    },
+    {
+      "map_id": 12,
+      "title": "울산",
+      "description": "울산지점",
+      "lat": 35.5384,
+      "lng": 129.3114,
+      "content": "울산지점입니다."
+    },
+    {
+      "map_id": 13,
+      "title": "수원",
+      "description": "수원지점",
+      "lat": 37.2636,
+      "lng": 127.0286,
+      "content": "수원지점입니다."
+    },
+    {
+      "map_id": 14,
+      "title": "용인",
+      "description": "용인지점",
+      "lat": 37.2411,
+      "lng": 127.1776,
+      "content": "용인지점입니다."
+    },
+    {
+      "map_id": 15,
+      "title": "성남",
+      "description": "성남지점",
+      "lat": 37.4204,
+      "lng": 127.1265,
+      "content": "성남지점입니다."
+    },
+    {
+      "map_id": 16,
+      "title": "청주",
+      "description": "청주지점",
+      "lat": 36.6424,
+      "lng": 127.4890,
+      "content": "청주지점입니다."
+    },
+    {
+      "map_id": 17,
+      "title": "춘천",
+      "description": "춘천지점",
+      "lat": 37.8813,
+      "lng": 127.7298,
+      "content": "춘천지점입니다."
+    },
+    {
+      "map_id": 18,
+      "title": "전주",
+      "description": "전주지점",
+      "lat": 35.8219,
+      "lng": 127.1480,
+      "content": "전주지점입니다."
+    },
+    {
+      "map_id": 19,
+      "title": "포항",
+      "description": "포항지점",
+      "lat": 36.0190,
+      "lng": 129.3435,
+      "content": "포항지점입니다."
+    },
+    {
+      "map_id": 20,
+      "title": "창원",
+      "description": "창원지점",
+      "lat": 35.2286,
+      "lng": 128.6811,
+      "content": "창원지점입니다."
+    },
+    {
+      "map_id": 21,
+      "title": "서울 구로",
+      "description": "구로지점",
+      "lat": 37.4955,
+      "lng": 126.8875,
+      "content": "구로지점입니다."
+    },
+    {
+      "map_id": 22,
+      "title": "서울 마포",
+      "description": "마포지점",
+      "lat": 37.5638,
+      "lng": 126.9084,
+      "content": "서울 마포지점입니다."
+    }
+  ]
+}

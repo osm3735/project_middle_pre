@@ -37,7 +37,7 @@ function updateMapContentByHash(points) {
 }
 
 window.addEventListener('hashchange', () => {
-    readTextFile("map_points.json", function (pointText) {
+    readTextFile("json/map_points.json", function (pointText) {
         const data = JSON.parse(pointText);
         updateMapContentByHash(data.points);
     });
@@ -45,7 +45,7 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('DOMContentLoaded', () => {
     if (window.location.hash) {
-        readTextFile("map_points.json", function (pointText) {
+        readTextFile("json/map_points.json", function (pointText) {
             const data = JSON.parse(pointText);
             updateMapContentByHash(data.points);
         });
@@ -55,7 +55,7 @@ window.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('load', () => {
     if (window.location.hash) {
         setTimeout(() => {
-            readTextFile("map_points.json", function (pointText) {
+            readTextFile("json/map_points.json", function (pointText) {
                 const data = JSON.parse(pointText);
                 updateMapContentByHash(data.points);
             });
